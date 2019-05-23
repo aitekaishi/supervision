@@ -1,0 +1,34 @@
+.items{
+	font-size: 30rpx;
+	display: flex;
+	padding: 18rpx;
+	justify-content: space-between;
+	height: 55rpx;
+}
+.items-title{
+	line-height: 55rpx;
+}
+.items-title image{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+}
+.bottoma{
+	width: 98vw;
+	margin: 0 auto;
+	height: 2rpx;
+	background: #CCCCCC;
+}
+.items-image image{
+	width: 20rpx;
+	height: 20rpx;
+	position: relative;
+	top: 11rpx;
+}
+.items-titlea{
+	flex: 1;
+	text-align: right;
+	line-height: 55rpx;
+	margin-right: 10rpx;
+	color: #999999;
+}

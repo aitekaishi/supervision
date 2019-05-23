@@ -1,0 +1,416 @@
+<view class="content">
+	<view class="content-one">
+		<view bindtap="setting" class="content-one-image">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/ed023933100ad5d6baca/icon-shezhi%402x.png"
+			 mode="widthFix" />
+		</view>
+		<view class="content-one-contain">
+			<view class="content-one-contain-image">
+				<image src="{{userimage}}" mode="widthFix" />
+			</view>
+			<view>
+				<view class="content-one-contain-name">{{ username }}</view>
+				<view class="content-one-contain-name">{{ useriphone }}</view>
+			</view>
+			
+		</view>
+	</view>
+
+	<view class="bottom"></view>
+
+	<view class="content-two">
+		<view class="content-two-one" bindtap="aaa">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/a5a4b5a4bf33b0fe8ac3/icon_zhxdw%20%E6%8B%B7%E8%B4%9D%402x.png"></image>
+			<view>装修信息</view>
+		</view>
+		<view class="content-two-one" bindtap="bbb">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/695b752fa3510101665d/icon_yzhxx%20%E6%8B%B7%E8%B4%9D%402x.png"></image>
+			<view>业主信息</view>
+		</view>
+	</view>
+	<view class="bottom"></view>
+	<view>
+		<view bindtap="changeli0">
+			<view class="items" tt:if="{{!item0}}">
+				<view class="items-title">验房</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item0}}">
+				<view class="items-title">验房</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item0}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick0" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/ab002005410d6165dbc4/icon_jingzhuang%20%E6%8B%B7%E8%B4%9D%202%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">精装房验房</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick1" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/4af72d6a86bf5e9ad99b/icon_maopi%20%E6%8B%B7%E8%B4%9D%202%402x%20%281%29.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">毛坯房验房</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli1">
+			<view class="items" tt:if="{{!item1}}">
+				<view class="items-title">前期审核</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item1}}">
+				<view class="items-title">前期审核</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item1}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/bdd9a4607759cabb9219/icon_tzhshh%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">图纸审核</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick01" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/b136b5e6351fc994bc22/icon_ysshh%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">预算审核</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick02" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/4c4305b9d4ccf483998f/icon_htfwpq%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">合同法务陪签</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli2">
+			<view class="items" tt:if="{{!item2}}">
+				<view class="items-title">水电节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item2}}">
+				<view class="items-title">水电节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item2}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick000" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/bf53736ccb9ef04d8fe6/icon_kgjd%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">开工交底</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick001" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/05bbc10ef12e94078092/icon_qmxt%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">砌墙及墙体抹灰验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick002" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/6ea55120209dfb0f4911/icon_shdclysh%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">水电巡检及材料验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick003" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/43d6af94ed8d4d4ff189/icon_shdyb%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">水电隐蔽工程验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli3">
+			<view class="items" tt:if="{{!item3}}">
+				<view class="items-title">泥水铺贴完工验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item3}}">
+				<view class="items-title">泥水铺贴完工验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item3}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick0000" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/7d5429effcec67d37bfb/icon_fshysh%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">防水施工验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick0001" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/4da7b652b7c180629f4f/icon_zhplx%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">泥水铺贴完工验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli4">
+			<view class="items" tt:if="{{!item4}}">
+				<view class="items-title">木作节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item4}}">
+				<view class="items-title">木作节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item4}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/d158cf523ce969af2f7e/icon_mzcl%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">木制作材料验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00001" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/ff74166f3cc158618585/icon_ddmc%20%E6%8B%B7%E8%B4%9D%202%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">吊顶基层质量验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00002" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/7ceeda18eda459585fd0/icon_ddmc%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">吊顶面层质量验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00003" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/de4d054c2b845f3ea92c/icon_mzhmc%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">木作完工验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli5">
+			<view class="items" tt:if="{{!item5}}">
+				<view class="items-title">中期验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item5}}">
+				<view class="items-title">中期验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item5}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000a" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/65fe1eae39c3b99a4e68/icon_zhqiysh%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">中期验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli6">
+			<view class="items" tt:if="{{!item6}}">
+				<view class="items-title">油漆节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item6}}">
+				<view class="items-title">油漆节点验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item6}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aa" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/bbd3015e9fdb89986855/icon_yqyqcl%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">油漆、墙漆材料验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000ab" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/008330726fc7df8ee8bb/icon%20_tzhmc%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">油漆、墙漆、施工验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli7">
+			<view class="items" tt:if="{{!item7}}">
+				<view class="items-title">成品安装</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item7}}">
+				<view class="items-title">成品安装</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item7}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aaa" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/b2df94247b744f674503/icon_zhtchg%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">定制橱柜安装验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aab" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/74fa00375129a278e832/icon_mjmt%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">木门及门套窗套安装验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aac" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/3a87063324c4cc6064a0/icon_mdbanzh%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">地板安装验收</view>
+				</view>
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aad" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/8fb7d6f02eb178df64dc/icon_wyazh%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">卫浴安装验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli8">
+			<view class="items" tt:if="{{!item8}}">
+				<view class="items-title">全屋竣工质量验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item8}}">
+				<view class="items-title">全屋竣工质量验收</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item8}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aaaa" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/423e78240fbc04e71962/icon_qwjg%20%E6%8B%B7%E8%B4%9D%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">全屋竣工质量验收</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+		<view bindtap="changeli9">
+			<view class="items" tt:if="{{!item9}}">
+				<view class="items-title">竣工结算</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view class="active items" tt:if="{{item9}}">
+				<view class="items-title">竣工结算</view>
+				<view class="items-image">
+					<image src="http://lc-ndknejad.cn-n1.lcfile.com/57f55d458f8b29b1ec33/icon_xiangxia%402x.png"
+					 alt="">
+				</view>
+			</view>
+			<view tt:if="{{item9}}" style="display: flex;height: 200rpx;">
+				<view style="width: 24vw;border-right: 0.1vw solid #CCCCCC;display: inline-block;text-align: center;height: 24vw;padding-top: 6vw;box-sizing: border-box;cursor: pointer;"
+				  bindtap="serverClick00000aaaaa" >
+					<view>
+						<image src="http://lc-ndknejad.cn-n1.lcfile.com/fb5f53f4558aee0ab464/icon_qwjg%20%E6%8B%B7%E8%B4%9D%202%402x.png" style="width: 10vw;height: 10vw;"></image>
+					</view>
+					<view style="height: 1vw;"></view>
+					<view style="width: 20vw;margin: 0 auto;font-size: 25rpx;">竣工结算</view>
+				</view>
+			</view>
+			<view class="bottoma"></view>
+		</view>
+	</view>
+</view>

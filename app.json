@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/message/index",
+    "pages/setting/index",
+    "pages/name/index",
+    "pages/iphone/index",
+    "pages/gray/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "监理信息录入",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,114 @@
+.content-one {
+	width: 90vw;
+	height: 240rpx;
+	margin: 0 auto;
+	border-radius: 15rpx;
+	background: linear-gradient(#ff9900, #f1b04d);
+	box-sizing: border-box;
+	padding: 40rpx;
+}
+.content-one-image {
+	text-align: right;
+}
+.content-one-image image {
+	width: 50rpx;
+	height: 50rpx;
+}
+.content-one-contain {
+	display: flex;
+	position: relative;
+	top: -20rpx;
+}
+.content-one-contain-image {
+	width: 80rpx;
+	height: 80rpx;
+}
+.content-one-contain-image image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+}
+.content-one-contain-name {
+	height: 40rpx;
+	line-height: 40rpx;
+	margin-left: 20rpx;
+	color: #ffffff;
+	font-size: 35rpx;
+	position: relative;
+	top: 3rpx;
+}
+.content-one-img img {
+	width: 48px;
+	height: 48px;
+}
+.content-two {
+	display: flex;
+	height: 200rpx;
+	width: 95vw;
+	box-sizing: border-box;
+}
+.content-two image,.server-contain image {
+	width: 90rpx;
+	height: 90rpx;
+}
+.content-two-one {
+	width: 47.5vw;
+	text-align: center;
+	font-size: 30rpx;
+	cursor: pointer;
+	padding-top: 30rpx;
+}
+.bottom {
+	height: 15rpx;
+	background: #f7f7f7;
+}
+.bottoma{
+	height: 5rpx;
+	background: #f7f7f7;
+}
+.server {
+	display: flex;
+	justify-content: flex-start;
+}
+.server .server-contain {
+	padding-top: 36px;
+	width: 188.5px;
+	height: 178px;
+	border-right: 2px solid #cccccc;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+uni-collapse-item {
+	height: 180px;
+}
+.server-contain div {
+	font-size: 24px;
+	margin-top: 10px;
+}
+.active{
+	background: #CCCCCC;
+}
+.disnone{
+	display: none;
+}
+.items{
+	font-size: 30rpx;
+	display: flex;
+	padding: 18rpx;
+	justify-content: space-between;
+}
+.items-title{
+	margin-left: 20rpx;
+}
+.items-image{
+	text-align: right;
+	position: relative;
+	margin-right: 10rpx;
+}
+.items-image image{
+	width: 20rpx;
+	height: 20rpx;
+	position: relative;
+	top: 5rpx;
+}

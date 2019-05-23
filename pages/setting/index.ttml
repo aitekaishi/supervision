@@ -1,0 +1,43 @@
+<view>
+	<view class="items">
+		<view class="items-title">
+			<image src="{{userimage}}" alt="">
+		</view>
+		<view class="items-image">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png" alt="">
+		</view>
+	</view>
+	<view class="bottoma"></view>
+</view>
+<view bindtap="changeli0">
+	<view class="items">
+		<view class="items-title">姓名</view>
+		<view class="items-titlea">{{name}}</view>
+		<view class="items-image">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png" alt="">
+		</view>
+	</view>
+	<view class="bottoma"></view>
+</view>
+
+<view bindtap="changeli1">
+	<view class="items">
+		<view class="items-title">电话号码</view>
+		<view class="items-titlea">{{iphone}}</view>
+		<view class="items-image">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png" alt="">
+		</view>
+	</view>
+	<view class="bottoma"></view>
+</view>
+
+<view bindtap="changeli2">
+	<view class="items">
+		<view class="items-title">性别</view>
+		<view class="items-titlea">{{gray}}</view>
+		<view class="items-image">
+			<image src="http://lc-ndknejad.cn-n1.lcfile.com/2785d45f43cb988711af/icon_xiangyou%402x.png" alt="">
+		</view>
+	</view>
+	<view class="bottoma"></view>
+</view>
